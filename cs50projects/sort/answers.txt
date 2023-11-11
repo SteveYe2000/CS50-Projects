@@ -1,0 +1,32 @@
+sort1 uses: - random50000	- real 0m6.977s
+            - reversed50000	- real 0m5.667s
+            - sorted50000	- real 0m0.946s
+Conclusion  - Bubble sort
+
+How do you know?
+- As one can obesevre, sort1 algorithm has been tested on three differnt data sets
+and the run time results were listed as above. It can be concluded that it is the
+Bubble sort algorithm since the runtime on sorted50000.txt dractically reduced from
+the average runtime of 6s to 0.9s which is equalvalent to Ω(n) time complexity.
+
+
+sort2 uses: - random50000	- real 0m1.370s
+            - reversed50000	- real 0m1.149s
+            - sorted50000	- real 0m1.046s
+Conclusion  - Merge sort
+
+How do you know?
+- It can be assumed that sort2 algorithm is Merge sort since the runtimes on all three
+different data sets remain relatively close to each other which is a characteristic of
+the Merge sort algorithm and is equalvalent to Θ(n log n) time complexity. Another distintive
+characteristic is that the average runtime of the algorithm scores the lowest among the three.
+
+
+sort3 uses: - random50000	- real 0m2.966s
+            - reversed50000	- real 0m3.262s
+            - sorted50000	- real 0m2.943s
+Conclusion  - Selection sort
+
+How do you know?
+- It is a Selection sort algorithm since the average runtime scores second lowest compared to
+the sort2 algorithm.
