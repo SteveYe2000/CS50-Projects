@@ -8,14 +8,14 @@ int main(void)
     do {
         n = get_int("Please enter height: ");
     }
-    while (n > 9 || n < 0);
+    while (n >= 9 || n <= 0);
     print_pyramid(n);
 }
 
 
 void print_pyramid(int h)
 {
-    for (int i = 0; i < h + 1; i++) {
+    for (int i = 1; i < h + 1; i++) {
         for (int j = h; j > 0; j--) {
             if (i < j) {
                 printf(" ");

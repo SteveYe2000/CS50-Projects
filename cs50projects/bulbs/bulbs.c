@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <stdlib.h>
 
 const int BITS_IN_BYTE = 8;
 
@@ -16,13 +17,14 @@ int main(void)
         int index = 0;
         int result = message[j];
         while (result != 0) {
-            for (int i = 7; i > -1; i--) {
-                if (result < ((int) pow(2, i))) {
+            for (int i = 7; i >= 0; i--) {
+                if (((int) pow(2, i)) > result) {
                     index += 1;
                 }
-                else {
+                else if (((int) pow(2, i)) <= result) {
                     result -= (int) pow (2, i);
                     message_in_binary[index] = '1';
+                    index += 1;
                 }
             }
             for (int x = 0; x < 8; x++) {

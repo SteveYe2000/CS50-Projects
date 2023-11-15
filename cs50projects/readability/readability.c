@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 int count_letters(string input);
 int count_words(string input);
@@ -23,13 +24,13 @@ int main(void)
     int sentences = count_sentences(text);
 
     // calulating L
-    float L = ((float) letters / (float) words) * 100;
+    float L = (float) letters / (float) words * 100;
 
     //calculating S
-    float S = ((float) sentences/ (float) words) * 100;
+    float S = (float) sentences/ (float) words * 100;
 
     // calculating grade
-    int index = 0.0588 * L - 0.296 * S - 15.8;
+    int index = round(0.0588 * L - 0.296 * S - 15.8);
 
     // indicate grade
     if (index < 1) {
@@ -37,10 +38,10 @@ int main(void)
     }
     else {
         if (index >= 16) {
-            printf("Grade: 16+\n");
+            printf("Grade 16+\n");
         }
         else {
-            printf("Grade: %i\n", index);
+            printf("Grade %i\n", index);
         }
     }
 
@@ -63,7 +64,7 @@ int count_words(string input)
 {
     int counter = 1;
     for (int i = 0; i < strlen(input); i++) {
-        if (isblank(input[i])) {
+        if (input[i] == ' ') {
             counter += 1;
         }
     }
@@ -75,10 +76,7 @@ int count_sentences(string input)
 {
     int counter = 0;
     for (int i = 0; i < strlen(input); i++) {
-        if (ispunct(input[i])) {
-            counter += 0;
-        }
-        if (input[i] == '.' || input[i] == '!') {
+        if (input[i] == '.' || input[i] == '!' || input[i] == '?') {
             counter += 1;
         }
     }
