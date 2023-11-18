@@ -1,0 +1,253 @@
+body {
+    background-color: #dce5e8;
+    color: #212529;
+    font-family: Arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    boxing-size: border-box;
+}
+
+.header {
+    background-color: #dce5e8;
+    height: 150px;
+    align-items: center;
+}
+
+.logo_position {
+    position: relative;
+    z-index: 1;
+    width: 190px;
+    margin: -20px 0px 0px -10px;
+}
+
+.h1_position {
+    position: relative;
+    z-index: 2;
+    left: -50px;
+    top: 5px;
+    width: 450px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 50px;
+    font-weight: 700;
+    transform: scaleY(2);
+    color: #001f26;
+}
+
+.home_position {
+    position: relative;
+    z-index: 3;
+    right: -40px;
+    top: 0px;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.portfolio_position {
+    position: relative;
+    z-index: 3;
+    right: -40px;
+    top: 0px;
+    width: 150px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.hobbies_position {
+    position: relative;
+    z-index: 3;
+    right: -40px;
+    top: 0px;
+    width: 150px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contact_position {
+    position: relative;
+    z-index: 3;
+    right: -40px;
+    top: 0px;
+    width: 150px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header_underline {
+    background-color: #ffffff;
+    height: 8px;
+}
+
+/* intro */
+.intro_container {
+    background-color: #45a1bf;
+    z-index: 1;
+    height: 500px;
+}
+
+.welcome {
+    position: relative;
+    z-index: 2;
+    right: -4rem;
+    top: 10rem;
+    width: 300px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 120px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.cat_position {
+    position: relative;
+    z-index: 3;
+    right: -35rem;
+    top: 7rem;
+    width: 300px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.bio_container {
+    height: 1150px;
+    z-index: 1;
+    border: 10px solid #97cdde;
+    background-color: #f2fdff;
+    margin: 250px 200px 100px 200px;
+}
+
+.me_pic_position {
+    position: relative;
+    z-index: 2;
+    border: 10px solid #686e6d;
+    left: -6rem;
+    top: -10rem;
+    width: 400px;
+    display: inline-block;
+}
+
+.biography {
+    position: relative;
+    z-index: 2;
+    right: 3.5rem;
+    top: -2rem;
+    width: 100px;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 100px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.bio_paragraphs {
+    position: relative;
+    top: -13rem;
+    padding: 5rem;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000000;
+    text-align: justify;
+}
+
+.signature {
+    position: relative;
+    top: -1rem;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+.footer {
+    background-color: #2d4f6e;
+    height: 180px;
+    text-align: center;
+}
+
+.f_home_position {
+    position: relative;
+    left: -20rem;
+    top: 20px;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.f_portfolio_position {
+    position: relative;
+    left: -8rem;
+    top: 20px;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.f_hobbies_position {
+    position: relative;
+    right: -6rem;
+    top: 20px;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.f_contact_position {
+    position: relative;
+    right: -18rem;
+    top: 20px;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer_underline {
+    background-color: #ffffff;
+    position: relative;
+    top: 5rem;
+    height: 2px;
+    margin: 0px 50px 0px 50px;
+}
+
+.copyright {
+    position: relative;
+    top: 5.8rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+
+}
