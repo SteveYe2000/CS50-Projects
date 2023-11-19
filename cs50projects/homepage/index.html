@@ -7,6 +7,27 @@
         <link href="styles.css" rel="stylesheet">
         <title>HOME</title>
         <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById("homeb").onclick = function () {
+                    location.href = "https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/index.html";
+                };
+
+                document.getElementById("portb").onclick = function () {
+                    location.href = "https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/portfolio.html";
+                };
+
+                document.getElementById("hobbiesb").onclick = function () {
+                    location.href = "https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/hobbies.html";
+                };
+
+                document.getElementById("contactb").onclick = function () {
+                    location.href = "https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/contact.html";
+                };
+            });
+        </script>
+
     </head>
     <body>
         <!--header section-->
@@ -14,10 +35,13 @@
             <img class="logo_position" alt="Steve Ye Logo" src="resources/SY PNG.png">
             <h1 class="h1_position">Steve Ye</h1>
 
-            <h1 class="home_position">Home</h1>
-            <h1 class="portfolio_position">Portfolio</h1>
-            <h1 class="hobbies_position">Hobbies</h1>
-            <h1 class="contact_position">Contact</h1>
+            <button class="home_position" id="homeb">Home</button>
+
+            <button class="portfolio_position" id="portb">Portfolio</button>
+
+            <button class="hobbies_position" id="hobbiesb">Hobbies</button>
+
+            <button class="contact_position" id="contactb">Contact</button>
 
         </div>
 
@@ -71,10 +95,29 @@
         <!--footer-->
         <div class="footer">
 
-            <h1 class="f_home_position">Home</h1>
-            <h1 class="f_portfolio_position">Portfolio</h1>
-            <h1 class="f_hobbies_position">Hobbies</h1>
-            <h1 class="f_contact_position">Contact</h1>
+            <h1 class="f_home_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/index.html">
+                    Home
+                </a>
+            </h1>
+
+            <h1 class="f_portfolio_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/portfolio.html">
+                    Portfolio
+                </a>
+            </h1>
+
+            <h1 class="f_hobbies_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/hobbies.html">
+                    Hobbies
+                </a>
+            </h1>
+
+            <h1 class="f_contact_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-8080.app.github.dev/contact.html">
+                    Contact
+                </a>
+            </h1>
 
             <div class="footer_underline"></div>
 

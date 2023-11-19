@@ -4,6 +4,36 @@ body {
     font-family: Arial;
 }
 
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.15s ease-in-out;
+    border-radius: 0.3rem;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +64,7 @@ body {
     padding: 0.5rem;
     font-size: 50px;
     font-weight: 700;
-    transform: scaleY(2);
+    transform: scaleY(1.5);
     color: #001f26;
 }
 
@@ -251,3 +281,4 @@ body {
     font-size: 15px;
 
 }
+
