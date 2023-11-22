@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block title %}
+    Registered
+{% endblock %}
+
+{% block body %}
+    <div class="page_header">
+        Thank You!
+    </div>
+
+    <div class="register_container">
+
+        <div>
+            <p class="services_para">
+                Thank you so much for making an appointment with us! We will ensure that you will receive
+                the highest quality of service that we deliever. Registeration with us is successful and one of
+                our team member will get in touch with you soon!
+            </p>
+        </div>
+
+        <div class="footer_underline"></div>
+
+        <h1 class="register_title">
+            Summary
+        </h1>
+
+        <div class="summary">
+
+            <h1 class="results">Full Name:</h1>
+            <p class="results">{{name[0]["FullName"]}}</p>
+            <br>
+
+            <h1 class="results">Phone Number:</h1>
+            <p class="results">{{phone[0]["PhoneNumber"]}}</p>
+            <br>
+
+            <h1 class="results">Email Address:</h1>
+            <p class="results">{{email[0]["Email"]}}</p>
+            <br>
+
+            <h1 class="results">Message:</h1>
+            <p class="results">{{message[0]["Message"]}}</p>
+            <br>
+
+        </div>
+
+
+        <button class="new_book" id="bookagain_btn">NEW BOOKING</button>
+
+    </div>
+{% endblock %}

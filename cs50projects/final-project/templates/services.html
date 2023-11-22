@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block title %}
+    Services
+{% endblock %}
+
+{% block body %}
+    <div class="page_header">
+        Services
+    </div>
+    <div class="services_container">
+        <div>
+            <p class="services_para">
+                We offer a range of different types of services according to clients' needs or special requests.
+            </p>
+        </div>
+
+        <div class="box1">
+            <img class="wrapper" alt="wedding" src="{{url_for('static', filename='resources/Wedding.jpg')}}">
+            <p class="text">
+                Are you getting married? We've got you coverd!
+            </p>
+
+            <button class="book" id="book">BOOK</button>
+
+        </div>
+
+        <div class="box2">
+            <img class="wrapper" alt="graduation" src="{{url_for('static', filename='resources/Graduation.jpg')}}">
+            <p class="text">
+                Are you graduating soon? We've got you coverd!
+            </p>
+            <button class="book" id="book1">BOOK</button>
+        </div>
+
+        <div class="box3">
+            <img class="wrapper" alt="press" src="{{url_for('static', filename='resources/press.jpg')}}">
+            <p class="text">
+                Hosting a public press? We've got you coverd!
+            </p>
+            <button class="book" id="book2">BOOK</button>
+        </div>
+
+        <div class="box4">
+            <img class="wrapper" alt="sport" src="{{url_for('static', filename='resources/sport.jpg')}}">
+            <p class="text">
+                Looking for quality sport photos? We've got you!
+            </p>
+            <button class="book" id="book3">BOOK</button>
+        </div>
+    </div>
+
+{% endblock %}

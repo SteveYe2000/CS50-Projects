@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block title %}
+    About Us
+{% endblock %}
+
+{% block body %}
+
+    <div class="page_header">
+        About Us
+    </div>
+
+    <div class="about_description">
+        <h1 class="about_title">
+            Ansel Adams
+        </h1>
+        <div>
+            <p class="para">
+                We are a team of professional photographers with decades of industry experiences based in New York.
+                Established in 1998. Our company is established in honor of the world's renowed photographer Ansel Adams
+                who is our former CEO of the company. He is now retired and left the company for new up coming generations.
+                To carry out his famous legacy, we mainly focus on the needs of our customers and deliver the highest quality
+                services. Services include weddings, graduations, sports, press and other special osscasions. We also offer
+                different types of photography services tailored to your special requirements.
+            </p>
+        </div>
+    </div>
+    <div class="underline"></div>
+
+    <div class="about_meet">
+        <h1 class="about_meet_title">
+            Meet the team
+        </h1>
+        <div class="person_container">
+            <img class="meet1" alt="person mug shot 1" src="{{url_for('static', filename='resources/m1.jpg')}}">
+            <p class="ben_descript">
+                "Meeting our clients' needs is our one number priority"
+                <br><br>
+                This is our CEO of Ansel Adams. Ben Dover has been running the company since 2017 and he is one of
+                our most important decision making bodies within our organization.
+            </p>
+        </div>
+
+        <div class="person_container">
+            <img class="meet2" alt="person mug shot 2" src="{{url_for('static', filename='resources/m2.jpg')}}">
+            <p class="mike_descript">
+                "I always make sure clients are happy with our services"
+                <br><br>
+                Product manager, Mike Litoris has been developing the services
+                that are tailored to meet our clients' requests and is also one of our essential figures in
+                our organization.
+            </p>
+        </div>
+
+        <div class="person_container">
+            <img class="meet3" alt="person mug shot 3" src="{{url_for('static', filename='resources/m3.jpg')}}">
+            <p class="tess_descript">
+                "Good work culture is essential because workplace is our second home"
+                <br><br>
+                This is Tess Thickel. She is our workplace superstar and team leader who is always ensuring
+                everyone in organization are being treated fair and square with outmost repects that everyone
+                deserves.
+            </p>
+        </div>
+
+    </div>
+
+{% endblock %}

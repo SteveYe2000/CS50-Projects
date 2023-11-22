@@ -1,0 +1,344 @@
+body {
+    background-color: #0C2D48;
+    color: #F4EBD0;
+    font-family: georgia;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: #F4EBD0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F4EBD0;
+    background-color: transparent;
+    text-decoration: none;
+}
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+  a:active {
+    color: #F4EBD0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #F4EBD0;
+    height: 8rem;
+}
+
+.brand {
+    position: relative;
+    padding-top: 1.4rem;
+    left: 5rem;
+    background: transparent;
+    border: 0;
+    font-size: 4rem;
+    font-family: georgia;
+}
+
+.home_btn {
+    position: relative;
+    top: -0.5rem;
+    left: 22rem;
+    background: transparent;
+    border: 0;
+    font-size: 2rem;
+    font-family: georgia;
+}
+
+.about_btn {
+    position: relative;
+    top: -0.5rem;
+    left: 25rem;
+    background: transparent;
+    border: 0;
+    font-size: 2rem;
+    font-family: georgia;
+}
+
+.services_btn {
+    position: relative;
+    top: -0.5rem;
+    left: 28rem;
+    background: transparent;
+    border: 0;
+    font-size: 2rem;
+    font-family: georgia;
+}
+
+.book_btn {
+    position: relative;
+    top: -0.5rem;
+    left: 31rem;
+    background: transparent;
+    border: 0;
+    font-size: 2rem;
+    font-family: georgia;
+}
+
+.h_img {
+    z-index: 1;
+    width: 79.6rem;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0% 75%;
+}
+
+.quote {
+    position: relative;
+    top: -8rem;
+    left: 15rem;
+    z-index: 2;
+    width: 816px;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: "Lucida Handwriting";
+    background-color: rgba(0,0,0, 0.2);
+    border-radius: 50px;
+}
+.name {
+    position: relative;
+    top: -7rem;
+    left: 35rem;
+    z-index: 2;
+    width: 180px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: "Lucida Handwriting";
+    background-color: rgba(0,0,0, 0.2);
+    border-radius: 50px;
+}
+
+.intro_img {
+    height: 600px;
+}
+
+.intro_container {
+    position: relative;
+    background-color: #ffffff;
+    height: 15rem;
+}
+
+.intro_text {
+    color: #0C2D48;
+    font-size: 3rem;
+    padding-top: 4rem;
+    padding-left: 20rem;
+    text-align: center;
+}
+
+
+.round_img {
+    width: 13rem;
+    border-radius: 50%;
+    position: relative;
+    top: -9.8rem;
+    left: 8rem;
+}
+
+.container1 {
+    height: 450px;
+}
+
+.title {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.para {
+    position: relative;
+    top: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.explore {
+    position: relative;
+    top: 2rem;
+    background: white;
+    width: 10rem;
+    height: 3rem;
+    border: 3px solid #F4EBD0;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-family: georgia;
+}
+
+.container2 {
+    height: 1250px;
+    background-color: #ffffff;
+}
+
+.title_c2 {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4rem;
+    color: #0C2D48;
+}
+
+.box1 {
+    position: relative;
+    z-index: 1;
+    top: 10rem;
+    left: 4rem;
+    width: 50rem;
+    height: 8.7rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #0C2D48;
+    border-radius: 25px;
+    background-color: #F4EBD0;
+    padding: 3rem;
+    text-align: justify;
+    border: 2px solid #0C2D48;
+}
+
+.box2 {
+    position: relative;
+    z-index: 2;
+    top: 6.7rem;
+    left: 21rem;
+    width: 50rem;
+    height: 7rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #0C2D48;
+    border-radius: 25px;
+    background-color: #F4EBD0;
+    padding: 3rem;
+    text-align: justify;
+    border: 2px solid #0C2D48;
+}
+
+.box3 {
+    position: relative;
+    z-index: 1;
+    top: 5rem;
+    left: 10rem;
+    width: 50rem;
+    height: 16rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #0C2D48;
+    border-radius: 25px;
+    background-color: #F4EBD0;
+    padding: 3rem;
+    text-align: justify;
+    border: 2px solid #0C2D48;
+}
+
+.box4 {
+    position: relative;
+    z-index: 1;
+    top: 4rem;
+    left: 14rem;
+    width: 50rem;
+    height: 5.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #0C2D48;
+    border-radius: 25px;
+    background-color: #F4EBD0;
+    padding: 3rem;
+    text-align: justify;
+    border: 2px solid #0C2D48;
+}
+
+.footer {
+    position: relative;
+    background-color: #0C2D48;
+    height: 180px;
+    text-align: center;
+}
+
+.f_home_position {
+    position: relative;
+    left: -12rem;
+    top: 20px;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.f_about_position {
+    position: relative;
+    left: -20.5rem;
+    top: 3.5rem;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.f_services_position {
+    position: relative;
+    left: 22.5rem;
+    top: 20px;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.f_book_position {
+    position: relative;
+    left: 14rem;
+    top: 3.5rem;
+    width: 115px;
+    margin: 0;
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.f_brand {
+    position: relative;
+    background: transparent;
+    left: 31rem;
+    width: 300px;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: georgia;
+}
+
+.footer_underline {
+    background-color: #F4EBD0;
+    position: relative;
+    top: 2rem;
+    height: 2px;
+    margin: 0px 50px 0px 50px;
+}
+
+.copyright {
+    position: relative;
+    top: 3rem;
+    text-align: center;
+    color: #F4EBD0;
+    font-size: 15px;
+}

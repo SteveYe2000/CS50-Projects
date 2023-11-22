@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <script src="{{ url_for('static', filename='js-files/buttons.js')}}"></script>
+        <script src="{{ url_for('static', filename='js-files/services_btn.js')}}"></script>
+        <script src="{{ url_for('static', filename='js-files/book_btn.js')}}"></script>
+        <script src="{{ url_for('static', filename='js-files/register_btn.js')}}"></script>
+
+        <link href="{{ url_for('static', filename='css-sheets/stylescommon.css')}}" rel="stylesheet">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta charset="utf-8">
+
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="underline"></div>
+
+        {% block body %}{% endblock %}
+        <div class="underline"></div>
+        <div class="footer">
+            <h1 class="f_home_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/">
+                    Home
+                </a>
+            </h1>
+
+            <h1 class="f_about_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/about">
+                    About
+                </a>
+            </h1>
+
+            <h1 class="f_services_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/services">
+                    Services
+                </a>
+            </h1>
+
+            <h1 class="f_book_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/book">
+                    Book
+                </a>
+            </h1>
+
+            <h1 class="f_brand">Ansel Adams</h1>
+
+            <div class="footer_underline"></div>
+
+            <div class="copyright">
+                Ansel Adams &#169 2023 All Rights Reserved
+            </div>
+
+        </div>
+    </body>
+</html>

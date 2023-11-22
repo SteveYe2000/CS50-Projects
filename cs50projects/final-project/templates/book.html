@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block title %}
+    Book with us
+{% endblock %}
+
+{% block body %}
+    <div class="page_header">
+        Book With Us
+    </div>
+    <div class="booking_container">
+        <div>
+            <p class="services_para">
+                Want to use our service? Make an appointment by leaving your details below! We will contact you
+                once we have receive your details. Please don't forget to mention which service you are after in
+                message section!
+            </p>
+        </div>
+
+        <div class="footer_underline"></div>
+
+        <form action="/book" method="post">
+
+            <div>
+                <p class="form_title">Full Name</p>
+            </div>
+            <input name="fullname" class="form_box" type="text" placeholder="Ex. Hugh Jess">
+
+            <div>
+                <p class="p_form_title">Phone Number</p>
+            </div>
+            <input name="phonenumber" class="p_form_box" type="text" placeholder="Ex. 0474382745">
+
+            <div>
+                <p class="e_form_title">Email Address</p>
+            </div>
+            <input name="email" class="e_form_box" type="text" placeholder="Ex. hughjess6969@gmail.com">
+
+            <div>
+                <p class="m_form_title">Message</p>
+            </div>
+            <textarea name="message" class="m_form_box" rows="10" cols="100" placeholder="Enter your message here!"></textarea>
+
+
+            <button type="submit" class="submit_btn" id="submit_details">SUBMIT</button>
+        </form>
+
+    </div>
+
+{% endblock %}

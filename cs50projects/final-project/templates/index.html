@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <script src="{{ url_for('static', filename='js-files/buttons.js')}}"></script>
+
+        <link href="{{ url_for('static', filename='css-sheets/styles.css')}}" rel="stylesheet">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}">
+        <title>Ansel Adams</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <div class="header">
+            <button class="brand" id="header_btn">Ansel Adams</button>
+
+            <button class="home_btn" id="index_home_btn">Home</button>
+            <button class="about_btn" id="index_about_btn">About</button>
+            <button class="services_btn" id="index_services_btn">Services</button>
+            <button class="book_btn" id="index_book_btn">Book</button>
+        </div>
+
+        <div class="intro_img">
+        <img class="h_img" alt="two people standing" src="{{url_for('static', filename='resources/homepage photo.jpg')}}">
+            <div class="quote">
+                "One good picture worths a thousand words"
+                <br>
+            </div>
+            <div class="name">
+                Frederick Barnard
+            </div>
+        </div>
+
+        <div class="intro_container">
+            <p class="intro_text">"At Ansel Adams we focus solely <br> on our customers' needs"</p>
+            <img class="round_img" alt="face" src="{{url_for('static', filename='resources/b.jpg')}}">
+        </div>
+
+        <div class="container1">
+            <h1 class="title">Ansel Adams</h1>
+
+            <div class="para">
+                <p>
+                    We are a team of professional photographers with decades of industry experiences based in New York.
+                    Established in 1998 and we mainly focus on the needs of our customers and deliver the highest quality
+                    services. We also offer different types of photography services tailored to your special requirements.
+                </p>
+
+                <button class="explore" id="index_explore_btn">Explore</button>
+            </div>
+        </div>
+
+        <div class="container2">
+            <h1 class="title_c2">What people say about us!</h1>
+
+            <div class="box1">
+                "Thank you Ansel Adams for being such wonderful service for our wedding. We were able to trust
+                the team completely as the communication leading up to the big day was fantastic. Photos turned
+                out great and the team was really lovely to work with. We're so glad we chose Ansel Adams to capture
+                the day."
+            </div>
+
+            <div class="box2">
+                "I could not recommend anyone better! Mark and his team were so wonderful to work with! Made my
+                wedding day so special, everyone was so grateful on how kind the team was. Help so much with the
+                stress and anxiety that comes with a wedding. Couldn’t be more happy!"
+            </div>
+
+            <div class="box3">
+                "Out of all our vendors, Ansel Adams was my favourite. I could not have asked for a more
+                perfect team. The team was always more than happy to answer any questions we had throughout
+                the planning process and he was so easy to communicate with. They honestly made our day. They were so
+                easy going, relaxed and knew how to make our guests laugh. Most importantly, the photos the team took
+                are absolutely stunning! Exceeded way beyond our expectations. We
+                told them what we wanted and they made magic. They captured all the moments we never want to forget
+                and all the moments we missed. We are so grateful for their hard work."
+            </div>
+
+            <div class="box4">
+                "Absolutely loved working with Ansel Adams, the team was amazing and we are so grateful they were apart
+                of our big day. Such a pleasure to work with. Thank you. Would 100% recommend for any occasion."
+            </div>
+        </div>
+
+        <div class="footer">
+            <h1 class="f_home_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/">
+                    Home
+                </a>
+            </h1>
+
+            <h1 class="f_about_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/about">
+                    About
+                </a>
+            </h1>
+
+            <h1 class="f_services_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/services">
+                    Services
+                </a>
+            </h1>
+
+            <h1 class="f_book_position">
+                <a href="https://turbo-space-funicular-7g5rgv7gpj4fxpj9-5000.app.github.dev/book">
+                    Book
+                </a>
+            </h1>
+
+            <h1 class="f_brand">Ansel Adams</h1>
+
+            <div class="footer_underline"></div>
+
+            <div class="copyright">
+                Ansel Adams &#169 2023 All Rights Reserved
+            </div>
+
+        </div>
+    </body>
+</html>
