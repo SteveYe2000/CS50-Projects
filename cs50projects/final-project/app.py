@@ -1,10 +1,10 @@
-from cs50 import SQL
+import sqlite3
 from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
 
-client = SQL("sqlite:///client.db")
-
+client = sqlite3.connect("client.db", check_same_thread=False)
+csr = client.cursor()
 
 @app.route("/")
 def index():
@@ -28,8 +28,9 @@ def book():
         phone = request.form.get("phonenumber")
         email = request.form.get("email")
         message = request.form.get("message")
-        client.execute("INSERT INTO clients (fullname, phonenumber, email, message) VALUES (?, ?, ?, ?)",
-                       name, phone, email, message)
+        csr.execute("INSERT INTO clients (fullname, phonenumber, email, message) VALUES (?, ?, ?, ?)",
+                       (name, phone, email, message))
+        client.commit()
         return redirect("/register")
     else:
         return render_template("book.html")
@@ -37,8 +38,8 @@ def book():
 
 @app.route("/register")
 def register():
-    name = client.execute("SELECT FullName FROM clients ORDER BY Time DESC LIMIT 1;")
-    phone = client.execute("SELECT PhoneNumber FROM clients ORDER BY Time DESC LIMIT 1;")
-    email = client.execute("SELECT Email FROM clients ORDER BY Time DESC LIMIT 1;")
-    message = client.execute("SELECT Message FROM clients ORDER BY Time DESC LIMIT 1;")
+    name = list(csr.execute("SELECT FullName FROM clients ORDER BY Time DESC LIMIT 1;"))
+    phone = list(csr.execute("SELECT PhoneNumber FROM clients ORDER BY Time DESC LIMIT 1;"))
+    email = list(csr.execute("SELECT Email FROM clients ORDER BY Time DESC LIMIT 1;"))
+    message = list(csr.execute("SELECT Message FROM clients ORDER BY Time DESC LIMIT 1;"))
     return render_template("register.html", name=name, phone=phone, email=email, message=message)
